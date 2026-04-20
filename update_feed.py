@@ -110,7 +110,7 @@ def fetch_and_process():
             item['content'] = ai_data.get('content', '<p>Click the link to view the full bonus details and terms.</p>')
             
             data.insert(0, item)
-            time.sleep(2)
+            time.sleep(15)
             
         except Exception as e:
             print(f"Error processing {item['link']} with Gemini: {e}")
