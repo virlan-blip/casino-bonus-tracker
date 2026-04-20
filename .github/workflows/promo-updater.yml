@@ -2,8 +2,7 @@ name: Live Promo Auto-Updater
 
 on:
   schedule:
-    # Runs at the top of every hour
-    - cron: '0 * * * *'
+  - cron: '15 */3 * * *' # Runs at 12:15, 3:15, 6:15, etc.
   workflow_dispatch:
 
 permissions:
